@@ -1,0 +1,49 @@
+@import "../../styles/variables.less";
+
+.header{
+  background: @primary-color;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar{
+  flex-grow: 1;
+  justify-content: flex-end;
+  max-width: 1240px;
+  color: #fff;
+  padding: 24px 100px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width:1000px) {
+    padding: 24px 32px;
+  }
+
+  @media (max-width:500px) {
+    padding: 12px 20px;
+    background: #212A41;
+  }
+}
+
+.tags{
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  @media (max-width:768px) {
+    display: none;
+  }
+}
+
+.endTag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.customPhoneIcon{
+  transform: rotate(100deg);
+}
