@@ -3,8 +3,13 @@ import Image from 'next/image'
 import UserIcon from '../../assets/user-circle.svg'
 import BurgerIcon from '../../assets/burger-menu.svg'
 import { Button } from 'antd'
+import { FC } from 'react'
+
+interface IActionBtn{
+  showDrawer:()=>void,
+}
  
-const ActionBtn = () => {
+const ActionBtn:FC<IActionBtn> = ({showDrawer}) => {
 return (
     <div className={styles.wrapper}>
       <div className={styles.btnLaptop}>
@@ -17,6 +22,7 @@ return (
         </Button>
       </div>
       <Button 
+        onClick={showDrawer}
         type="link" 
         icon={<Image src={BurgerIcon} alt="user-icon"/>} 
         className={styles.btnMobile}
