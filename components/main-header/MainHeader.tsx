@@ -1,12 +1,13 @@
-import { Row } from 'antd'
 import styles from './main-header.module.less'
-import Image from 'next/image'
 import { Logo } from '../logo'
+import { Wrapper } from '../wrapper'
  
 const MainHeader = () => {
 return (
     <div className={styles.header}>
-      <Logo/>
+      <Wrapper>
+        <Logo/>
+      </Wrapper>
     </div>
   )
 }
