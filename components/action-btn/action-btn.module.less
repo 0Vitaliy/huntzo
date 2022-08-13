@@ -1,0 +1,51 @@
+.wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.btn{
+  height: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.btnSignin{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #212A41;
+
+  :hover{
+    color: #212A41;
+  }
+}
+
+.btnAddProperty{
+  background: #030718;
+  border-radius: 20px;
+  padding: 14px 24px;
+  color: #FFFFFF;
+
+  :hover{
+    background: #030718;
+    color: #FFFFFF;
+  }
+}
+
+.btnLaptop{
+  display: flex;
+  align-items: center;
+  
+  @media (max-width:1000px) {
+    display: none;
+  }
+}
+
+.btnMobile{
+  display: block;
+  @media (min-width:1000px) {
+    display: none;
+  }
+}
