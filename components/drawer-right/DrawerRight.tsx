@@ -2,6 +2,7 @@ import styles from './drawer-right.module.less'
 import Image from 'next/image'
 import CloseIcon from '../../assets/close.svg'
 import UserIcon from '../../assets/user-circle.svg'
+import ArrowDownIcon from '../../assets/chevron-down-white.svg'
 import { Button, Drawer } from 'antd'
 import { FC } from 'react'
 
@@ -31,6 +32,21 @@ return (
           type="link" 
           icon={<Image src={CloseIcon} alt="close"/>}
         />
+       </div>
+
+       <div className={styles.content}>
+         <div className={styles.listItem}>
+           <span>listings</span>
+           <Image src={ArrowDownIcon} alt="close"/>
+         </div>
+         <div className={styles.listItem}>
+           <span>Features</span>
+           <Image src={ArrowDownIcon} alt="close"/>
+         </div>
+         <div className={styles.listItem}>
+           <span>pages</span>
+           <Image src={ArrowDownIcon} alt="close"/>
+         </div>
        </div>
 
        <div className={styles.btnAction}>
